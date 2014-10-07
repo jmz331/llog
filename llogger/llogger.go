@@ -8,7 +8,7 @@ package llogger
 
 import (
 	"fmt"
-	"github.com/lvanneo/llog/basellog"
+	"github.com/jmz331/llog/basellog"
 	"os"
 )
 

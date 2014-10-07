@@ -7,7 +7,7 @@
 //lvan_software@foxmail.com
 
 import (
-	"github.com/lvanneo/llog/config"
+	"github.com/jmz331/llog/config"
 	"log"
 	"os"
 )

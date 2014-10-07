@@ -8,7 +8,7 @@ package basellog
 
 import (
 	"fmt"
-	"github.com/lvanneo/llog/config"
+	"github.com/jmz331/llog/config"
 	"sync"
 )
 
@@ -146,7 +146,7 @@ func (this *Llogger) writeLog(level int, val ...interface{}) error {
 	if err != nil {
 		return err
 	}
-	msg = fmt.Sprintln(lev, msg)
+	msg = fmt.Sprint(lev, msg)
 
 	llogmsg := new(LlogMSG)
 	llogmsg.level = level
@@ -183,7 +183,7 @@ func (this *Llogger) writeLogf(level int, format string, val ...interface{}) err
 	if err != nil {
 		return err
 	}
-	msg = fmt.Sprintln(lev, msg)
+	msg = fmt.Sprint(lev, msg)
 
 	llogmsg := new(LlogMSG)
 	llogmsg.level = level

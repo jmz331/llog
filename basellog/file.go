@@ -7,7 +7,7 @@ package basellog
 //lvan_software@foxmail.com
 
 import (
-	"github.com/lvanneo/llog/config"
+	"github.com/jmz331/llog/config"
 	"log"
 	"os"
 	"strconv"
@@ -137,7 +137,7 @@ func (this *FileLog) WriteLog(level int, msg string) (err error) {
 
 	this.checkLogFile()
 
-	this.logger.Print(msg)
+	this.logger.Println(msg)
 
 	if 0 == this.nowsize {
 		this.nowsize += msgsize
