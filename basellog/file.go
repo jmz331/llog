@@ -137,7 +137,7 @@ func (this *FileLog) WriteLog(level int, msg string) (err error) {
 
 	this.checkLogFile()
 
-	this.logger.Println(msg)
+	this.logger.Print(msg)
 
 	if 0 == this.nowsize {
 		this.nowsize += msgsize
